@@ -1,0 +1,102 @@
+<meta charset="utf-8">
+
+<title> 쪽문맛집리스트 </title>
+<head>
+<style>
+.center {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.foodimg{
+  width : 300;
+
+}
+</style>
+</head>
+
+<body>
+
+  <div class="center">
+    <p><b>쪽문 맛집 리스트</b></p>
+  </div>
+
+  <a href="한식.html">
+    <button type="button" onclick="function1()">한식</button>
+  </a>
+  <button type="button" onclick="function2()">양식</button>
+  <button type="button" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button type="button" onclick="function5()">중식</button>
+  </a>
+  <button type="button" onclick="function4()">이탈리안</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function function1() {
+    document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+  }
+  function function2() {
+    document.getElementById("demo").innerHTML = "양식 맛집 리스트";
+  }
+  function function3() {
+    document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+  }
+  function function4() {
+    document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+  }
+  function function5() {
+    document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+  }
+  </script>
+  <div>
+    <div style="border : 5px solid green">
+      <img class="foodimg" src="https://bit.ly/2OIy1E3">
+      <img class="foodimg" src="https://bit.ly/2HWRYWY">
+      <img class="foodimg" src="https://bit.ly/2JXtwGS">
+    </div>
+    <div>
+      <div>
+        <h2>또래끼리</h2>
+        <p>세종대/군자/광진 - 한정식/백반/전통한식</p>
+      </div>
+    </div>
+  </div>
+  <table>
+      <caption>식당 정보</caption>
+      <tr>
+        <th>종류</th>
+        <td>김치볶음밥/순두부찌개</td>
+      </tr>
+      <tr>
+        <th>영업 시간</th>
+        <td>11:30 ~ 21:30</td>
+      </tr>
+      <tr>
+        <th>메뉴</th>
+        <td>
+          <ul>
+            <li>
+              <span>김치볶음밥</span>
+              <span>5,000원</span>
+            </li>
+            <li>
+              <span>순두부찌개</span>
+              <span>7,000원</span>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td>서울시 광진구 군자동 102-11</td>
+      </tr>
+  </table>
+  <aside style="float:right">
+    <iframe style="border : 4px solid green" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7795795209886!2d127.07130621500875!3d37.55227609980224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4cfc4f4af31%3A0x8fbf0dfd09d422f5!2z65iQ656Y64G866as!5e0!3m2!1sko!2skr!4v1554259213387!5m2!1sko!2skr" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </aside>
+
+  </body>

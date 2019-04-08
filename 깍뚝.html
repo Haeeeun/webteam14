@@ -1,0 +1,114 @@
+<meta charset="utf-8">
+
+<title> 쪽문맛집리스트 </title>
+<head>
+<style>
+.center {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.foodimg{
+  width : 300;
+
+}
+</style>
+</head>
+
+<body>
+
+  <div class="center">
+    <p><b>쪽문 맛집 리스트</b></p>
+  </div>
+
+  <a href="한식.html">
+    <button type="button" onclick="function1()">한식</button>
+  </a>
+  <button type="button" onclick="function2()">양식</button>
+  <button type="button" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button type="button" onclick="function5()">중식</button>
+  </a>
+  <button type="button" onclick="function4()">이탈리안</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function function1() {
+    document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+  }
+  function function2() {
+    document.getElementById("demo").innerHTML = "양식 맛집 리스트";
+  }
+  function function3() {
+    document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+  }
+  function function4() {
+    document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+  }
+  function function5() {
+    document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+  }
+  </script>
+  <div>
+    <div style="border : 5px solid green">
+      <img class="foodimg" src="https://bit.ly/2uKviR6">
+      <img class="foodimg" src="https://bit.ly/2TQtGQe">
+      <img class="foodimg" src="https://bit.ly/2uF8wu4">
+    </div>
+    <div>
+      <div>
+        <h2>깍뚝</h2>
+        <p>세종대/군자/광진 - 고기</p>
+      </div>
+    </div>
+  </div>
+  <table>
+      <caption>식당 정보</caption>
+      <tr>
+        <th>종류</th>
+        <td>돼지고기</td>
+      </tr>
+      <tr>
+        <th>영업 시간</th>
+        <td>16:00 ~ 02:00</td>
+      </tr>
+      <tr>
+        <th>메뉴</th>
+        <td>
+          <ul>
+            <li>
+              <span>숙성 삼겹살 한판</span>
+              <span>19,900원</span>
+            </li>
+            <li>
+              <span>숙성 삼겹살 반판</span>
+              <span>12,900원</span>
+            </li>
+            <li>
+              <span>숙성 목살 한판</span>
+              <span>19,900원</span>
+            </li>
+            <li>
+              <span>숙성 목살 반판</span>
+              <span>12,900원</span>
+            </li>
+            <li>
+              <span>돼지갈비</span>
+              <span>10,900원</span>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td>서울시 광진구 능동로19길 36</td>
+      </tr>
+  </table>
+  <aside style="float:right">
+    <iframe style="border : 4px solid green" src="https://bit.ly/2HYu65s" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </aside>
+
+  </body>

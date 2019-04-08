@@ -1,0 +1,114 @@
+<meta charset="utf-8">
+
+<title> 쪽문맛집리스트 </title>
+<head>
+<style>
+.center {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.foodimg{
+  width : 300;
+
+}
+</style>
+</head>
+
+<body>
+
+  <div class="center">
+    <p><b>쪽문 맛집 리스트</b></p>
+  </div>
+
+  <a href="한식.html">
+    <button type="button" onclick="function1()">한식</button>
+  </a>
+  <button type="button" onclick="function2()">양식</button>
+  <button type="button" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button type="button" onclick="function5()">중식</button>
+  </a>
+  <button type="button" onclick="function4()">이탈리안</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function function1() {
+    document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+  }
+  function function2() {
+    document.getElementById("demo").innerHTML = "양식 맛집 리스트";
+  }
+  function function3() {
+    document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+  }
+  function function4() {
+    document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+  }
+  function function5() {
+    document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+  }
+  </script>
+  <div>
+    <div style="border : 5px solid green">
+      <img class="foodimg" src="https://bit.ly/2HIztFO">
+      <img class="foodimg" src="https://bit.ly/2FDeeTo">
+      <img class="foodimg" src="https://bit.ly/2HIyHbS">
+    </div>
+    <div>
+      <div>
+        <h2>빠오즈푸</h2>
+        <p>세종대/군자/광진 - 딤섬/만두</p>
+      </div>
+    </div>
+  </div>
+  <table>
+      <caption>식당 정보</caption>
+      <tr>
+        <th>종류</th>
+        <td>딤섬/만두</td>
+      </tr>
+      <tr>
+        <th>영업 시간</th>
+        <td>11:30 ~ 21:30</td>
+      </tr>
+      <tr>
+        <th>메뉴</th>
+        <td>
+          <ul>
+            <li>
+              <span>부추지짐만두(8개)</span>
+              <span>6,000원</span>
+            </li>
+            <li>
+              <span>새우지짐만두(9개)</span>
+              <span>7,000원</span>
+            </li>
+            <li>
+              <span>훈둔면</span>
+              <span>6,000원</span>
+            </li>
+            <li>
+              <span>고기 빠오즈(7개)</span>
+              <span>6,000원</span>
+            </li>
+            <li>
+              <span>부추 빠오즈(7개)</span>
+              <span>6,000원</span>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td>서울시 광진구 군자동 361-32</td>
+      </tr>
+  </table>
+  <aside style="float:right">
+    <iframe style="border : 4px solid green" src="https://bit.ly/2FCtHmI" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </aside>
+
+  </body>
