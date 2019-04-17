@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<title>전체 맛집 리스트</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+.m-bar-block .m-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="m-sidebar m-bar-block m-card m-top m-xlarge m-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="m_close()"
+  class="m-bar-item m-button">Close Menu</a>
+  <a href="전체.html" onclick="m_close()" class="m-bar-item m-button">전체</a>
+  <a href="정문.html" onclick="m_close()" class="m-bar-item m-button">정문</a>
+  <a href="쪽문.html" onclick="m_close()" class="m-bar-item m-button">쪽문</a>
+  <a href="후문.html" onclick="m_close()" class="m-bar-item m-button">후문</a>
+</nav>
+
+<!-- Top menu -->
+<div class="m-top">
+  <div class="m-white m-xlarge" style="max-width:1200px;margin:auto">
+    <div class="m-button m-padding-16 m-left" onclick="m_open()">&#9776;</div>
+    <div class="m-right m-padding-16">Login</div>
+    <div class="m-center m-padding-16">전체</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <a href="한식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function1()">한식</button>
+  </a>
+  <button class="m-button m-black m-padding-large m-large m-margin-top"onclick="function2()">양식</button>
+  <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function5()">중식</button>
+  </a>
+  <a href="이탈리안.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function4()">이탈리안</button>
+  </a>
+
+  <p id="demo"></p>
+
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center" id="food">
+    <div class="m-quarter">
+<!--
+      <ul>
+        <li>
+          <a href="또래끼리.html">또래끼리<br>
+            <img src="https://bit.ly/2HWRYWY" alt="또래끼리" style="width:100%">
+          </a>
+        </li>
+        <li>
+          <a href="깍뚝.html">깍뚝<br>
+            <img src="https://bit.ly/2uKviR6" alt="깍뚝" style="width:100%">
+          </a>
+          <li>
+            <a href="빠오즈푸.html">빠오즈푸<br>
+              <img src="https://bit.ly/2HIztFO" alt="빠오즈푸" style="width:100%">
+            </a>
+          </li>
+      </ul>-->
+        <a href="또래끼리.html">
+        <img src="https://bit.ly/2HWRYWY" alt="또래끼리" style="width:100%">
+        <h3>또래끼리</h3>
+        </a>
+    <p>세종대 김치볶음밥 맛있게 하는 집</p>
+    </div>
+    <div class="m-quarter">
+
+      <a href="깍뚝.html">
+
+        <img src="https://bit.ly/2uKviR6" alt="깍뚝" style="width:100%">
+  <h3>깍뚝</h3>
+</a>
+  <p>제주식 숙성 삼겹살이 맛있는 저렴한 어린이대공원 고기집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="빠오즈푸.html">
+        <img src="https://bit.ly/2HIztFO" alt="빠오즈푸" style="width:100%">
+
+      <h3>빠오즈푸</h3>
+      </a>
+      <p>한국인 입맛에 맞는 중국식만두</p>
+
+  <!-- Second Photo Grid
+  <div class="m-row-padding m-padding-16 m-center">
+    <div class="m-quarter">
+      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="m-quarter">
+      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="m-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="m-quarter">
+      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+-->
+  <!-- Pagination -->
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="#" class="m-bar-item m-black m-button">1</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+
+<script>
+
+// Script to open and close sidebar
+function m_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function m_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function function1() {
+  document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+}
+function function2() {
+  document.getElementById("demo").innerHTML = "양식 맛집 리스트";
+}
+function function3() {
+  document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+}
+function function4() {
+  document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+}
+function function5() {
+  document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+}
+</script>
+
+</body>
+</html>
