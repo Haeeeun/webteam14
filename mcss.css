@@ -165,7 +165,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .m-pink,.m-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
 .m-purple,.m-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
 .m-deep-purple,.m-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.m-red,.m-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.m-red,.m-hover-red:hover{color:#fff!important;background-color:#f44336!important;background-color: rgba( 244, 67, 54, 0.8 )!important;}
 .m-sand,.m-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 .m-teal,.m-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .m-yellow,.m-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
@@ -232,3 +232,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .m-border-dark-grey,.m-hover-border-dark-grey:hover,.m-border-dark-gray,.m-hover-border-dark-gray:hover{border-color:#616161!important}
 .m-border-pale-red,.m-hover-border-pale-red:hover{border-color:#ffe7e7!important}.m-border-pale-green,.m-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .m-border-pale-yellow,.m-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.m-border-pale-blue,.m-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("sejongimg.jpg");
+  min-height: 75%;
+  color:#000!important;
+
+}
+.m-p {
+padding: 30px;
+
+
+text-align: center;
+background-color: #ffffff;
+background-color: rgba( 255, 255, 255, 0.5 );
+}
