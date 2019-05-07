@@ -1,147 +1,146 @@
-<!-- 템플릿 적용-->
+<!-- 이미지와 식당 이름에 링크 연결을 해야할듯 -->
+
 <!DOCTYPE html>
 <html>
-<title>중식 식당</title>
+<title>한식 맛집 리스트</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+.m-bar-block .m-bar-item {padding:20px}
 </style>
-
 <body>
-  <!-- Navbar -->
-  
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">메뉴 닫기</a>
-  <a href="한식.html"  class="w3-bar-item w3-button">한식</a>
-  <a href="양식.html"  class="w3-bar-item w3-button">양식</a>
-  <a href="분식.html" class="w3-bar-item w3-button">분식</a>
-  <a href="중식.html"  class="w3-bar-item w3-button">중식</a>
-  <a href="이탈리안.html"  class="w3-bar-item w3-button">이탈리안</a>
+<nav class="m-sidebar m-bar-block m-card m-top m-xlarge m-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="m_close()"
+  class="m-bar-item m-button">Close Menu</a>
+  <a href="전체.html" onclick="m_close()" class="m-bar-item m-button">전체</a>
+  <a href="정문.html" onclick="m_close()" class="m-bar-item m-button">정문</a>
+  <a href="쪽문.html" onclick="m_close()" class="m-bar-item m-button">쪽문</a>
+  <a href="후문.html" onclick="m_close()" class="m-bar-item m-button">후문</a>
 </nav>
 
 <!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
-    <div class="w3-center w3-padding-16">중식 식당</div>
+<div class="m-top">
+  <div class="m-white m-xlarge" style="max-width:1200px;margin:auto">
+    <div class="m-button m-padding-16 m-left" onclick="m_open()">&#9776;</div>
+    <div class="m-right m-padding-16">Login</div>
+    <div class="m-center m-padding-16">한식</div>
   </div>
 </div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <a href="한식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function1()">한식</button>
+  </a>
+  <button class="m-button m-black m-padding-large m-large m-margin-top"onclick="function2()">양식</button>
+  <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function5()">중식</button>
+  </a>
+  <a href="이탈리안.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function4()">이탈리안</button>
+  </a>
+
+  <p id="demo"></p>
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
+  <div class="m-row-padding m-padding-16 m-center" id="food">
+    <div class="m-quarter">
       <a href="빠오즈푸.html">
         <img src="https://bit.ly/2HIztFO" alt="빠오즈푸" style="width:100%">
         <h3>빠오즈푸</h3>
-        <p>빠오즈푸 설명--</p>
       </a>
+      <p>한국인 입맛에 맞는 중국식만두</p>
     </div>
-    <div class="w3-quarter">
+    <div class="m-quarter">
+      <a href=".html">
+        <img src="" alt="" style="width:100%">
+        <h3></h3>
+      </a>
+      <p></p>
+    </div>
+    <div class="m-quarter">
+      <a href=".html">
+        <img src="" alt="" style="width:100%">
+        <h3></h3>
+      </a>
+      <p></p>
+    </div>
+    <div class="m-quarter">
       <a href="">
         <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
+        <h3></h3>
       </a>
+      <p></p>
     </div>
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
+  <!-- Second Photo Grid
+  <div class="m-row-padding m-padding-16 m-center">
+    <div class="m-quarter">
+      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
+    <div class="m-quarter">
+      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="m-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="m-quarter">
+      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
   </div>
-
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="">
-        <img src="" alt="" style="width:100%">
-        <h3>중식식당</h3>
-        <p>중식식당 설명--</p>
-      </a>
-    </div>
-  </div>
-
+-->
   <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">&laquo;</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+</div>
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="#" class="m-bar-item m-black m-button">1</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">&raquo;</a>
     </div>
   </div>
 
-  <hr id="about">
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">
-    <h3>세종대 맛집 천재</h3><br>
-    <h6>윤지은 이해은 이소정</h6>
-  </div>
-  <hr>
-
-
-<!-- End page content -->
-</div>
 
 <script>
+
 // Script to open and close sidebar
-function w3_open() {
+function m_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
 
-function w3_close() {
+function m_close() {
   document.getElementById("mySidebar").style.display = "none";
+}
+function function1() {
+  document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+}
+function function2() {
+  document.getElementById("demo").innerHTML = "양식 맛집 리스트";
+}
+function function3() {
+  document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+}
+function function4() {
+  document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+}
+function function5() {
+  document.getElementById("demo").innerHTML = "중식 맛집 리스트";
 }
 </script>
 
