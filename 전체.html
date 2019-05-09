@@ -16,7 +16,9 @@ ul{
   margin: auto;
   padding: 0;
   background-color:none;
-  width :33%;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 li {
   float : left;
@@ -28,7 +30,7 @@ li a{
   text-decoration : none;
 }
 li a:hover{
-  background-color: #ddd;
+  background-color: none;
 }
 li a.active{
   text-decoration : underline;
@@ -53,15 +55,15 @@ li a.active{
 
 
 <!-- !PAGE CONTENT! -->
-<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
-  <ul>
-    <li><a class="active" href="전체.html"><h6>전체</h6></a></li>
-    <li><a href="한식.html"><h6>한식</h6></a></li>
-    <li><a href="중식.html"><h6>중식</h6></a></li>
-    <li><a href="양식.html"><h6>양식</h6></a></li>
-    <li><a href="일식.html"><h6>일식</h6></a></li>
-    <li><a href="카페.html"><h6>카페</h6></a></li>
-  </ul>
+<div class="m-main m-content m-center m-padding" style="max-width:1200px;margin-top:100px">
+    <ul>
+      <li><a class="active" href="전체.html"><h6>전체</h6></a></li>
+      <li><a href="한식.html"><h6>한식</h6></a></li>
+      <li><a href="중식.html"><h6>중식</h6></a></li>
+      <li><a href="양식.html"><h6>양식</h6></a></li>
+      <li><a href="일식.html"><h6>일식</h6></a></li>
+      <li><a href="카페.html"><h6>카페</h6></a></li>
+    </ul>
 <!--<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
   <a href="한식.html">
     <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function1()">한식</button>
@@ -105,7 +107,7 @@ li a.active{
     </div>
     <div class="m-quarter">
       <a href="깍뚝.html">
-        <img src="https://bit.ly/2uKviR6" alt="깍뚝" style="width:100%">
+        <img src="https://bit.ly/2POVTpW" alt="깍뚝" style="width:100%">
         <h3>깍뚝</h3>
       </a>
       <p>제주식 숙성 삼겹살이 맛있는 저렴한 어린이대공원 고기집</p>
@@ -135,7 +137,7 @@ li a.active{
     </div>
 
   </div>
--->
+
   <!-- Pagination -->
   <div class="m-center m-padding-32">
     <div class="m-bar">

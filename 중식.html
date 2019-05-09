@@ -10,6 +10,30 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
 .m-bar-block .m-bar-item {padding:20px}
+ul{
+  list-style-type:none;
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+li {
+  float : left;
+}
+li a{
+  display : block;
+  text-align : center;
+  padding : 5px 10px;
+  text-decoration : none;
+}
+li a:hover{
+  background-color: none;
+}
+li a.active{
+  text-decoration : underline;
+}
 </style>
 <body>
 
@@ -30,19 +54,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
 
 <!-- !PAGE CONTENT! -->
 <div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
-  <a href="한식.html">
-    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function1()">한식</button>
-  </a>
-  <button class="m-button m-black m-padding-large m-large m-margin-top"onclick="function2()">양식</button>
-  <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function3()">분식</button>
-  <a href="중식.html">
-    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function5()">중식</button>
-  </a>
-  <a href="이탈리안.html">
-    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function4()">이탈리안</button>
-  </a>
-
-  <p id="demo"></p>
+  <ul>
+    <li><a class="active" href="전체.html"><h6>전체</h6></a></li>
+    <li><a href="한식.html"><h6>한식</h6></a></li>
+    <li><a href="중식.html"><h6>중식</h6></a></li>
+    <li><a href="양식.html"><h6>양식</h6></a></li>
+    <li><a href="일식.html"><h6>일식</h6></a></li>
+    <li><a href="카페.html"><h6>카페</h6></a></li>
+  </ul>
 
   <!-- First Photo Grid-->
   <div class="m-row-padding m-padding-16 m-center" id="food">
