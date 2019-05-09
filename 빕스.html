@@ -1,0 +1,120 @@
+<!-- 템플릿 적용-->
+<!DOCTYPE html>
+<html>
+<title>빕스</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+th, td{
+  border-bottom: 1px solid #ddd;
+}
+</style>
+
+<body>
+
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">메뉴 닫기</a>
+  <a href="한식.html"  class="w3-bar-item w3-button">한식</a>
+  <a href="양식.html"  class="w3-bar-item w3-button">양식</a>
+  <a href="분식.html" class="w3-bar-item w3-button">분식</a>
+  <a href="중식.html"  class="w3-bar-item w3-button">중식</a>
+  <a href="이탈리안.html"  class="w3-bar-item w3-button">이탈리안</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
+    <div class="w3-center w3-padding-16">빕스</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://bit.ly/2JrbZ8c" alt="빕스" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="https://bit.ly/2LxIO5V" alt="빕스" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="https://bit.ly/2Vdiuxu" alt="빕스" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="https://bit.ly/2vLFgST" alt="빕스" style="width:100%">
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <p>빕스 상세 정보</p>
+    <table style="margin:auto; width:70%; padding:10px;">
+        <tr>
+          <th>종류</th>
+          <td>양식-패밀리레스토랑</td>
+        </tr>
+        <tr>
+          <th>영업<br>시간</th>
+          <td>매일 : 11:30 ~ 22:00</td>
+        </tr>
+        <tr>
+          <th>메뉴</th>
+          <td>
+            <ul style="list-style-type:none; ">
+              <li>평일런치 샐러드바 21900</li>
+              <li>평일디너 샐러드바 29700</li>
+              <li>주말 샐러드바 29700</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td>서울 광진구 능동로 239</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <iframe src="http://bit.ly/305OZl4" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+
+  <hr id="about">
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
