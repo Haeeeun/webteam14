@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>한식 맛집 리스트</title>
+<title>전체 맛집 리스트</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="mcss.css">
@@ -34,14 +34,14 @@ li a:hover{
 li a.active{
   text-decoration : underline;
 }
+
 </style>
 <body>
-
 
   <!-- Top menu -->
   <!-- 제목 -->
   <div class="m-top m-white">
-    <div class="m-center m-xlarge" style="margin:30px 0 0 0">한식</div>
+    <div class="m-center m-xlarge" style="margin:30px 0 0 0">전체</div>
   </div>
 
   <!-- 로고 -->
@@ -52,35 +52,34 @@ li a.active{
     </div>
   </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
-  <ul>
-    <li><a href="전체.html"><h6>전체</h6></a></li>
-    <li><a class="active" href="한식.html"><h6>한식</h6></a></li>
-    <li><a href="중식.html"><h6>중식</h6></a></li>
-    <li><a href="양식.html"><h6>양식</h6></a></li>
-    <li><a href="일식.html"><h6>일식</h6></a></li>
-    <li><a href="카페.html"><h6>카페</h6></a></li>
-  </ul>
 
-  <p id="demo"></p>
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-center m-padding" style="max-width:1200px;margin-top:100px">
+    <ul>
+      <li><a class="active" href="전체.html"><h6>전체</h6></a></li>
+      <li><a href="한식.html"><h6>한식</h6></a></li>
+      <li><a href="중식.html"><h6>중식</h6></a></li>
+      <li><a href="양식.html"><h6>양식</h6></a></li>
+      <li><a href="일식.html"><h6>일식</h6></a></li>
+      <li><a href="카페.html"><h6>카페</h6></a></li>
+    </ul>
+<!--<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <a href="한식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function1()">한식</button>
+  </a>
+  <button class="m-button m-black m-padding-large m-large m-margin-top"onclick="function2()">양식</button>
+  <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function3()">분식</button>
+  <a href="중식.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function5()">중식</button>
+  </a>
+  <a href="이탈리안.html">
+    <button class="m-button m-black m-padding-large m-large m-margin-top" onclick="function4()">이탈리안</button>
+  </a>
+
+  <p id="demo"></p>-->
 
   <!-- First Photo Grid-->
   <div class="m-row-padding m-padding-16 m-center" id="food">
-    <div class="m-quarter">
-      <a href="또래끼리.html">
-        <img src="https://bit.ly/2HWRYWY" alt="또래끼리" style="width:100%">
-        <h3>또래끼리</h3>
-      </a>
-      <p>세종대 김치볶음밥 맛있게 하는 집</p>
-    </div>
-    <div class="m-quarter">
-      <a href="깍뚝.html">
-        <img src="https://bit.ly/2POVTpW" alt="깍뚝" style="width:100%">
-        <h3>깍뚝</h3>
-      </a>
-      <p>제주식 숙성 삼겹살이 맛있는 저렴한 어린이대공원 고기집</p>
-    </div>
     <div class="m-quarter">
       <a href="국수사랑채.html">
         <img src="http://bit.ly/2HlQ1Rw" alt="국수사랑채" style="width:100%">
@@ -95,9 +94,6 @@ li a.active{
       </a>
       <p>세종대 싸고 맛있는 24시 감자탕집</p>
     </div>
-  </div>
-  <!-- Second Photo Grid-->
-  <div class="m-row-padding m-padding-16 m-center">
     <div class="m-quarter">
       <a href="하남돼지집.html">
         <img src="http://bit.ly/2JxXZJM" alt="하남돼지집" style="width:100%">
@@ -113,15 +109,18 @@ li a.active{
       <p>세종대 학생들이 자주 가는 국수집</p>
     </div>
   </div>
+  <!--Second Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center">
+
+  </div>
+
   <!-- Pagination -->
-</div>
   <div class="m-center m-padding-32">
     <div class="m-bar">
-      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
-      <a href="#" class="m-bar-item m-black m-button">1</a>
-      <a href="#" class="m-bar-item m-button m-hover-black">2</a>
-      <a href="#" class="m-bar-item m-button m-hover-black">3</a>
-      <a href="#" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="전체2.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="전체.html" class="m-bar-item m-button m-hover-black">1</a>
+      <a href="전체2.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="#" class="m-bar-item m-black m-button">3</a>
       <a href="#" class="m-bar-item m-button m-hover-black">&raquo;</a>
     </div>
   </div>
