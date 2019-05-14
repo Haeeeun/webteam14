@@ -1,0 +1,117 @@
+<!-- 이미지와 식당 이름에 링크 연결을 해야할듯 -->
+
+<!DOCTYPE html>
+<html>
+<title>중식 맛집 리스트2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+.m-bar-block .m-bar-item {padding:20px}
+ul{
+  list-style-type:none;
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+li {
+  float : left;
+}
+li a{
+  display : block;
+  text-align : center;
+  padding : 5px 10px;
+  text-decoration : none;
+}
+li a:hover{
+  background-color: none;
+}
+li a.active{
+  text-decoration : underline;
+}
+</style>
+<body>
+
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <div class="m-center m-xlarge" style="margin:30px 0 0 0">중식</div>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-white m-xlarge" style="max-width:1200px;margin:auto">
+      <a href="index.html" class="m-button m-padding-16 m-left" onclick="function1()">
+      <img src="logo.png" alt="logo" style="width:95px;height:50px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <ul>
+    <li><a href="전체.html"><h6>전체</h6></a></li>
+    <li><a href="한식.html"><h6>한식</h6></a></li>
+    <li><a class="active" href="중식.html"><h6>중식</h6></a></li>
+    <li><a href="양식.html"><h6>양식</h6></a></li>
+    <li><a href="기타.html"><h6>기타</h6></a></li>
+    <li><a href="카페.html"><h6>카페</h6></a></li>
+  </ul>
+
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center" id="food">
+    <div class="m-quarter">
+      <a href=".\cafe\홍콩반점.html">
+        <img src="http://bitly.kr/yAcMQr" alt="홍콩반점" style="width:100%">
+        <h3>홍콩반점</h3>
+      </a>
+      <p>홍콩반점0410 어린이대공원역점</p>
+    </div>
+  </div>
+
+</div>
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="중식.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="중식.html" class="m-bar-item m-button m-hover-black">1</a>
+      <a href="#" class="m-bar-item m-black m-butto">2</a>
+      <a href="#" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+
+<script>
+
+// Script to open and close sidebar
+function m_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function m_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function function1() {
+  document.getElementById("demo").innerHTML = "한식 맛집 리스트";
+}
+function function2() {
+  document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+}
+function function3() {
+  document.getElementById("demo").innerHTML = "분식 맛집 리스트";
+}
+function function4() {
+  document.getElementById("demo").innerHTML = "이탈리안 맛집 리스트";
+}
+function function5() {
+  document.getElementById("demo").innerHTML = "중식 맛집 리스트";
+}
+</script>
+
+</body>
+</html>
