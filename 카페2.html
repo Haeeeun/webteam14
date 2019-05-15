@@ -13,8 +13,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
 .fontj {font-family:"Jua", sans-serif;}
 .m-bar-block .m-bar-item {padding:20px}
-ul{
-  list-style-type:none;
+.navcenter{
   margin: auto;
   padding: 0;
   background-color:none;
@@ -22,20 +21,24 @@ ul{
   left:50%;
   transform: translate(-50%, -50%);
 }
-li {
-  float : left;
-}
-li a{
-  display : block;
-  text-align : center;
-  padding : 5px 10px;
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
   text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
 }
-li a:hover{
+.navmenu:hover{
   background-color: none;
+  color : rgb(255,0,0);
+  font-weight: bold;
 }
-li a.active{
-  text-decoration : underline;
+.active{
+  color : rgb(255,0,0);
+  font-weight: bold;
+}
+.last{
+  border-right : none;
 }
 </style>
 <body>
@@ -57,14 +60,17 @@ li a.active{
 
 <!-- !PAGE CONTENT! -->
 <div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
-  <ul>
-    <li><a href="전체.html"><h6>전체</h6></a></li>
-    <li><a href="한식.html"><h6>한식</h6></a></li>
-    <li><a href="중식.html"><h6>중식</h6></a></li>
-    <li><a href="양식.html"><h6>양식</h6></a></li>
-    <li><a href="기타.html"><h6>기타</h6></a></li>
-    <li><a class="active" href="카페.html"><h6>카페</h6></a></li>
-  </ul>
+  <div>
+    <div class="navcenter">
+      <a href="전체.html" class="navmenu">전체</a>
+      <a href="한식.html" class="navmenu">한식</a>
+      <a href="중식.html" class="navmenu">중식</a>
+      <a href="양식.html" class="navmenu">양식</a>
+      <a href="기타.html" class="navmenu">기타</a>
+      <a href="카페.html" class="navmenu active last">카페</a>
+    </div>
+  </div>
+  <hr>
 
   <!-- First Photo Grid-->
   <div class="m-row-padding m-padding-16 m-center" id="food">
